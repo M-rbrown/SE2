@@ -1,0 +1,143 @@
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --lato: 'Lato', sans-serif;
+    --sidebar-width: 280px;
+}
+
+body {
+    overflow-x: hidden; /* Hide any horizontal overflow */
+}
+
+.con {
+    margin-left: 280px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    flex: 0 0 calc(20% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.info-box, .resi {
+    text-align: center;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.right-panel {
+    flex: 0 0 calc(45% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* Add gap between the charts */
+}
+
+.announcements-panel {
+    flex: 0 0 calc(30% - 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chart-label h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+#barChart {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+}
+
+.chart-Label h2{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+}
+#pieChart {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+}
+
+.right-btn {
+    width: 90%;
+}
+
+.right-btn .add {
+    margin-left: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.view {
+    margin-left: 40px;
+    width: 90%;
+}
+
+.view .list-group {
+    width: 100% !important;
+}
+
+.view .announcement-item .title {
+    font-weight: bold;
+}
+
+.view .announcement-item .time {
+    font-size: 12px;
+    color: #888;
+}
+
+.view .announcement-item .description {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .con {
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-panel,
+    .right-panel,
+    .announcements-panel {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .right-panel .chart-label {
+        font-size: 18px;
+    }
+
+    #barChart {
+        max-width: 100%;
+        height: 300px;
+    }
+
+    #pieChart {
+        max-width: 100%;
+        height: 300px;
+    }
+}
