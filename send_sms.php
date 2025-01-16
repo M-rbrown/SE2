@@ -40,15 +40,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Specify the single phone number to send SMS
-    $phone_number = '+639632632828'; // The phone number to send the SMS to
+    $phone_number = '#'; // The phone number to send the SMS to
 
     // Format the message (title and description only)
     $sms_message = "$title: $description";
 
     // Twilio API credentials
-    $account_sid = 'AC51d94f389bed1c2c9ea8a899f0b4127d';
-    $auth_token = 'a678cc866d4a91108e6b43d43d562643';
-    $twilio_number = '+13204313676';
+    $account_sid = 'ACC_SID';
+    $auth_token = 'AUTH_TOKEN';
+    $twilio_number = 'ACC_#';
 
     // Create Twilio client
     $client = new \Twilio\Rest\Client($account_sid, $auth_token);
