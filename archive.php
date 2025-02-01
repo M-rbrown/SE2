@@ -15,12 +15,15 @@ $expired_result = $conn->query($expired_sql);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diezmo Announcements</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <!-- JUST TRY ONLY -->
+ <link rel="stylesheet" href="modules/sidebar.css">
+
 </head>
 <body>
 <?php
     session_start();
-    include_once "modules/arc.php";
     include_once "modules/navbar.php";
+    include_once "modules/sidemenu.php";
 ?>
 <div class="container py-5" style="margin-left: 295px">
     <div class="row" style="width: 1050px;">
