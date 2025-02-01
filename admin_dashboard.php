@@ -24,7 +24,11 @@ date_default_timezone_set('Asia/Manila');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <link href="css/dashboard.css" rel="stylesheet">
+
+    <!-- JUST TRY ONLY -->
+    <link rel="stylesheet" href="modules/sidebar.css">
   </head>
+  
   <?php
     session_start();
     include_once "modules/sidemenu.php";
