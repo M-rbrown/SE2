@@ -34,11 +34,14 @@ if (isset($_POST["submit"])) {
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+   <!-- JUST TRY ONLY -->
+   <link rel="stylesheet" href="modules/sidebar.css">
+
    <title>Diezmo Announcements</title>
 </head>
 <?php 
     include_once "modules/navbar.php"; 
-    include_once "modules/resident_list.php"; 
+    include_once "modules/sidemenu.php";
     ?>
 <body>
 
@@ -79,7 +82,6 @@ if (isset($_POST["submit"])) {
                   <option value="Tulay na Bakal">Tulay na Bakal</option>
                   <option value="Pinag-tagpo">Pinag-tagpo</option>
                   <option value="Pinag-layo">Pinag-layo</option>
-                  <!-- Add more locations as needed -->
                </select>
             </div>
 
